@@ -1,0 +1,12 @@
+[alias]
+rl = "run --release"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
+opt-level = "z"
+
+[registries.crates-io]
+protocol = "sparse"
